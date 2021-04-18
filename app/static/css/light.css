@@ -1,0 +1,97 @@
+body {
+    background: rgb(180,227,255);
+    background: linear-gradient(90deg, rgba(180,227,255,1) 0%, rgba(246,149,164,1) 100%);
+  }
+  /********************   Task Card   ********************/
+  .col-lg-3 {
+    margin-top: 20px;
+  }
+  .task-card {
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    border: 0px;
+    background: rgb(95,195,255);
+    background: linear-gradient(90deg, rgba(95,195,255,1) 0%, rgba(251,63,92,0.43771011822697825) 100%);
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(56,50,56,1);
+    -moz-box-shadow: 5px 5px 15px 0px rgba(56,50,56,1);
+    box-shadow: 5px 5px 15px 0px rgba(56,50,56,1);
+  }
+  .task-card p {
+    white-space: pre-wrap;
+  }
+  .task-card:hover {
+    background: rgb(95,195,255);
+    background: linear-gradient(90deg, rgba(95,195,255,1) 0%, rgba(251,63,92,1) 100%);
+  }
+  
+  .dropdown-menu {
+    background: rgb(145,213,255);
+    background: linear-gradient(0deg, rgba(145,213,255,1) 0%, rgba(233,156,168,1) 100%);
+  
+  }
+  .dropdown-menu a:hover {
+    background: rgb(30,150,222);
+    background: linear-gradient(270deg, rgba(30,150,222,1) 0%, rgba(231,42,71,1) 100%);
+  }
+  /********************   Navbar   ********************/
+  .top-space {
+    height: 30px;
+  }
+  .navbar {
+    background: rgb(0,159,255);
+    background: radial-gradient(circle, rgba(0,159,255,0.8130602582830007) 0%, rgba(236,47,75,1) 100%);
+  }
+  .smart-scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .scrolled-down{
+     transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+     transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+  @media (min-width: 768px) {
+  .navbar-brand.abs
+      {
+        position: absolute;
+        width: 20%;
+        text-align: center;
+        left: 40%;
+      }
+  }
+  /********************   Add Task Menu   ********************/
+  .addTaskForm, .about {
+    padding: 10px;
+    margin: 10px;
+  }
+  .about {
+    text-align:center;
+  }
+  .modal-content  {
+    background: rgb(0,159,255);
+    background: linear-gradient(0deg, rgba(0,159,255,1) 0%, rgba(236,47,75,1) 100%);
+    border: 0px;
+    border-radius: 20px;
+  }
+  .text-box {
+    border: 0px;
+    border-radius: 10px;
+  }
+  input[type=text] {
+    outline: none;
+  }
+  .modal-content button {
+    background: #e76579;
+    border-radius: 10px;
+  }
+  .modal-content button:hover {
+    background: #f11536;
+  }
+  
