@@ -67,7 +67,7 @@ body {
       }
   }
   /********************   Add Task Menu   ********************/
-  .addTaskForm, .about {
+  .about {
     padding: 10px;
     margin: 10px;
   }
