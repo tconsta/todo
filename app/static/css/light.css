@@ -71,6 +71,12 @@ body {
     padding: 10px;
     margin: 10px;
   }
+  .add-task a:link, a:visited, a:active {
+    color: rgb(218, 218, 218);
+  }
+  .add-task a:hover {
+    color: rgb(255, 255, 255);
+  }
   .about {
     text-align:center;
   }

@@ -21,4 +21,5 @@ from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.TaskListView.as_view(), name='index'),
+    path('add', views.add_task, name='add_task'),
 ]
