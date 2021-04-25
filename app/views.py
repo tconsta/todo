@@ -1,5 +1,5 @@
 from django.views import generic
-from django.shortcuts import render
+
 from .models import Task
 
 
@@ -7,8 +7,8 @@ class TaskListView(generic.ListView):
     model = Task
 
 
-def add_task(request):
-
-    context = {
-    }
-    return render(request, 'app/add_task.html', context=context)
+class TaskCreate(generic.CreateView):
+    model = Task
+    fields = ['title', 'description']
+    template_name = 'app/task_create.html'
+    success_url = '/'

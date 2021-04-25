@@ -20,6 +20,6 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.TaskListView.as_view(), name='index'),
-    path('add', views.add_task, name='add_task'),
+    path('', views.TaskListView.as_view()),
+    path('add/', views.TaskCreate.as_view(), name='task_create'),
 ]
