@@ -100,4 +100,7 @@ body {
   .modal-content button:hover {
     background: #f11536;
   }
+  .homebutton {
+    margin-left: 10px;
+  }
   
