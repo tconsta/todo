@@ -12,3 +12,8 @@ class TaskCreate(generic.CreateView):
     fields = ['title', 'description']
     template_name = 'app/task_create.html'
     success_url = '/'
+
+
+class TaskDelete(generic.DeleteView):
+    model = Task
+    success_url = '/'
