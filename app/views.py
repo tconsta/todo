@@ -17,3 +17,9 @@ class TaskCreate(generic.CreateView):
 class TaskDelete(generic.DeleteView):
     model = Task
     success_url = '/'
+
+
+class TaskUpdate(generic.UpdateView):
+    model = Task
+    fields = ['title', 'description', 'completed']
+    success_url = '/'
