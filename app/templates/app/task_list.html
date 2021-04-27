@@ -6,9 +6,9 @@
     <div class="row">
       {% if task_list %}
       {% for task in task_list %}
-      <div class="col-lg-3 col-md-4">
+      <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="dropdown">
-          <div class="task-card" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="task-card" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <h2>{{ task.title }}</h2>
             <p>{{ task.description }}</p>
           </div>
