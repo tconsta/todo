@@ -5,6 +5,7 @@ from .models import Task
 
 class TaskListView(generic.ListView):
     model = Task
+    ordering = ['-created']
 
 
 class TaskCreate(generic.CreateView):
