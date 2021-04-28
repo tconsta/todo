@@ -1,5 +1,5 @@
 from django.views import generic
-
+from django.shortcuts import redirect
 from .models import Task
 
 
@@ -23,3 +23,13 @@ class TaskUpdate(generic.UpdateView):
     model = Task
     fields = ['title', 'description', 'completed']
     success_url = '/'
+
+
+def done_undone(request, pk):
+    task = Task.objects.get(pk=pk)
+    if task.completed is True:
+        task.completed = False
+    else:
+        task.completed = True
+    task.save()
+    return redirect('/')
