@@ -108,3 +108,6 @@ body {
   .homebutton {
     margin-left: 10px;
   }
+  .whitetext {
+    color: white;
+  }
