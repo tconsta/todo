@@ -6,7 +6,7 @@
 git clone https://github.com/tconsta/todo.git
 cd todo && docker-compose up
 
-docker docker exec -it APP_CONTAINER_ID bash
+docker exec -it APP_CONTAINER_ID bash
 python manage.py migrate
 ```
 http://localhost:8000/
